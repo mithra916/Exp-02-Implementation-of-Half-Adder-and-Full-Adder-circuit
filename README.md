@@ -24,31 +24,55 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 #### Figure -01 HALF ADDER 
 
-
 ![image](https://user-images.githubusercontent.com/36288975/163552057-b3547877-6d07-45b4-b7e0-bcfebfad9e1d.png)
 
 #### Figure -02 FULL ADDER 
 
 ### Procedure
-
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
-/*
+```
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+Developed by: R.LOGA MITHRA
+RegisterNumber:212223100027
 
+HALF ADDER:
+module halfadd(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b);
+endmodule
+
+FULL ADDER:
+module fulladder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = ((a^b)^c);
+assign carry = ((a&b)|(b&c)|(c&a));
+endmodule
+```
+### Truth Table
+![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/89b8a438-c031-4e4c-a035-38a4b730d243)
+
+![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/66380191-9004-44b9-ad6f-16f9a93b967a)
+
+RTL realization
 ### Output:
 ### RTL
+
+![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/5bb88b87-b00b-49c0-ad0c-c223fac11282)
+
+![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/058ef2b2-06a8-423d-8d8f-c45c12ed24d1)
+
 ### TIMING DIAGRAM
 
+![halfadder EX NO 3(1)](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/c751527d-1603-4827-b645-eac1d72b83f2)
 
-### TRUTH TABLE 
+![fulladder EX NO 3(2)](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/6d126e24-0734-4d72-90d4-58e2aa743f25)
+
 
 ### Result:
