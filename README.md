@@ -57,22 +57,31 @@ endmodule
 ```
 ### Truth Table
 HALF ADDER
+
 ![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/89b8a438-c031-4e4c-a035-38a4b730d243)
+
 FULL ADDER
+
 ![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/66380191-9004-44b9-ad6f-16f9a93b967a)
 
 RTL realization
 ### Output:
 ### RTL
 HALF ADDER
+
 ![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/5bb88b87-b00b-49c0-ad0c-c223fac11282)
+
 FULL ADDER
+
 ![image](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/058ef2b2-06a8-423d-8d8f-c45c12ed24d1)
 
 ### TIMING DIAGRAM
 HALF ADDER
+
 ![halfadder EX NO 3(1)](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/c751527d-1603-4827-b645-eac1d72b83f2)
+
 FULL ADDER
+
 ![fulladder EX NO 3(2)](https://github.com/mithra916/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149986612/6d126e24-0734-4d72-90d4-58e2aa743f25)
 
 
