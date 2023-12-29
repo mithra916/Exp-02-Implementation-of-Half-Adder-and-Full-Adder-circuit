@@ -51,8 +51,13 @@ FULL ADDER:
 module fulladder(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
-assign sum = ((a^b)^c);
-assign carry = ((a&b)|(b&c)|(c&a));
+wire x,p,q,r;
+xor(x,b,c);
+xor(sum,x,a);
+and(p,a,b);
+and(q,b,c);
+and(r,a,c);
+or(carry,p,q,r);
 endmodule
 ```
 ### Truth Table
